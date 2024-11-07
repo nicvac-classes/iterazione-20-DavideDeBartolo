@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    int blocchi;
+    std::cout << "Inserisci il numero di blocchi: ";
+    std::cin >> blocchi;
+
+    int altezza = 0;
+    int strato = 1;
+
+    while (blocchi >= strato) {
+        blocchi -= strato;
+        altezza++;
+        strato++;
+    }
+
+    std::cout << "Altezza = " << altezza << std::endl;
+    return 0;
+}
